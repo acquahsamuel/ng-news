@@ -16,7 +16,15 @@ export class HeroComponent implements OnInit {
   categories = [
     {
       name: '',
-      title: 'Graphql'
+      title: 'SCSS'
+    },
+    {
+      name: '',
+      title: 'Javascript'
+    },
+    {
+      name: '',
+      title: 'Html'
     },
     {
       name: '',

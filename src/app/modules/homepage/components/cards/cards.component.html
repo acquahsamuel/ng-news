@@ -2,7 +2,7 @@
 
   <div *ngFor="let i of blog" class="card">
     
-    <div class="card-wrapper" routerLink="{{i.id}}">
+    <div class="card-wrapper" (click)="goTo(i.id)">
       <!-- <img class="image" src="{{i.image}}}" alt="sampleimage"> -->
       <h6 class="heading"> {{i.meta_description}} </h6>
       <p> {{ i.author}} </p>
@@ -12,18 +12,11 @@
       <ul *ngFor="let x of i.tags">
         <li> {{x}} </li>
       </ul>
-
-     <!-- <div>
-        <ul *ngFor="let x of i.links">
-          <li> {{x}} </li>
-        </ul>
-     </div> -->
       <p>
         <!-- <mat-icon> date </mat-icon> -->
       </p>
 
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-
+      <!-- <mat-icon aria-label="Example home icon" fontIcon="home"></mat-icon> -->
     </div>
   </div>
 </div>

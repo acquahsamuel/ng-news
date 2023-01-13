@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-cards',
@@ -7,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
   }
-
 
   blog = [
     {
@@ -29,6 +32,7 @@ export class CardsComponent implements OnInit {
       post_summary: "This is an example blog post.  You can delete this blog post by going to the blog dashboard",
     },
     {
+      id: 2,
       author: 'Angular',
       image: 'https://www.nylas.com/wp-content/uploads/GraphQL_Blog@2x-1024x536.png',
       documentationurl: 'https://angular.io/docs',
@@ -43,6 +47,7 @@ export class CardsComponent implements OnInit {
 
     },
     {
+      id: 3,
       author: 'Angular',
       image: 'https://unsplash.com/photos/cckf4TsHAuw',
       documentationurl: 'https://angular.io/docs',
@@ -60,6 +65,7 @@ export class CardsComponent implements OnInit {
 
 
     {
+      id: 4,
       author: 'Angular',
       image: 'https://images.unsplash.com/photo-1606921231106-f1083329a65c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
       documentationurl: 'https://angular.io/docs',
@@ -74,7 +80,7 @@ export class CardsComponent implements OnInit {
     },
 
     {
-
+      id: 4,
       author: 'Angular',
       image: 'https://unsplash.com/photos/cckf4TsHAuw',
       documentationurl: 'https://angular.io/docs',
@@ -89,7 +95,7 @@ export class CardsComponent implements OnInit {
     },
 
     {
-
+      id: 5,
       author: 'Angular',
       image: 'https://unsplash.com/photos/cckf4TsHAuw',
       documentationurl: 'https://angular.io/docs',
@@ -102,8 +108,16 @@ export class CardsComponent implements OnInit {
       postBody: "This is an example blog post.  You can delete this blog post by going to the blog dashboard",
       post_summary: "This is an example blog post.  You can delete this blog post by going to the blog dashboard",
 
-
     },
   ]
+
+
+
+  // @ts-ignore 
+  goTo(id: any) {
+    this.router.navigate(['/blog-details', id]);
+  }
+
+
 
 }
