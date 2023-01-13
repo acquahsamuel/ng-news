@@ -3,11 +3,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    
-    // justify-content: space-evenly;
 
     div {
         margin-bottom: 3px;
+    }
+
+    .heading {
+        color: firebrick;
+        font-size: 12px;
     }
 
     .card {
@@ -26,7 +29,40 @@
         // max-width: 400px;
 
         // display: flex;
+
+        &:hover {
+            background-color: rgb(244, 241, 241);
+        }
+    }
+
+    .postBody {
+        font-size: 14px;
+    }
+
+    ul {
+        // border: 1px solid black;
+        display: inline;
+        padding: 0.2em 0.6em;
+        // display: flex;
+        li {
+            text-decoration: none;
+            list-style: none;
+            display: inline;
+            border: 1px solid black;
+        }
+    }
+
+    .image {
+        overflow: hidden;
+        width: 100%;
+        // height: auto;
+        height: 160px;
+        padding: 0 !important;
+        background-size: cover;
+    }
+
+    .links {
+        color: dodgerblue;
+        font-size: 13px;
     }
 }
-
-

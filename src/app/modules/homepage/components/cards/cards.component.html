@@ -1,21 +1,28 @@
 <div class="cards">
 
   <div *ngFor="let i of blog" class="card">
-    <div class="card-wrapper">
-      <img src="{{i.image}}}" alt="" sizes="" srcset="">
-      <h6> {{i.meta_description}} </h6>
+    
+    <div class="card-wrapper" routerLink="{{i.id}}">
+      <!-- <img class="image" src="{{i.image}}}" alt="sampleimage"> -->
+      <h6 class="heading"> {{i.meta_description}} </h6>
       <p> {{ i.author}} </p>
-      <p> {{ i.documentationurl}} </p>
-      <p> {{i.postBody}} </p>
+      <p class="postBody"> {{i.postBody}} </p>
       <p> {{ i.date}} </p>
-
+      <p class="links" routerLink="lin"> {{ i.documentationurl}} </p>
       <ul *ngFor="let x of i.tags">
         <li> {{x}} </li>
       </ul>
 
+     <!-- <div>
+        <ul *ngFor="let x of i.links">
+          <li> {{x}} </li>
+        </ul>
+     </div> -->
       <p>
-        <!-- <mat-icon>arrow_right_alt</mat-icon> -->
+        <!-- <mat-icon> date </mat-icon> -->
       </p>
+
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
 
     </div>
   </div>

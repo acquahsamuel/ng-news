@@ -15,23 +15,24 @@ export class HeroComponent implements OnInit {
 
   categories = [
     {
-      name : '',
-      title : 'Graphql'
+      name: '',
+      title: 'Graphql'
     },
     {
-      name : '',
-      title : 'Angular'
+      name: '',
+      title: 'Angular'
     },
     {
-      name : '',
-      title : 'Node js'
+      name: '',
+      title: 'Node js'
     },
     {
-      name : '',
-      title : 'Mongodb'
+      name: '',
+      title: 'Mongodb'
+    },
+    {
+      name: '',
+      title: 'Data structures'
     }
-  
   ]
-
-
 }
