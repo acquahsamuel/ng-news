@@ -1,0 +1,32 @@
+.cards {
+    margin: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+    // justify-content: space-evenly;
+
+    div {
+        margin-bottom: 3px;
+    }
+
+    .card {
+        //  max-width: 400px;
+        width: 270px;
+        height: auto;
+        overflow: hidden;
+        cursor: pointer;
+        // height: 200px;
+    }
+
+    .card-wrapper {
+        border: 1px solid black;
+        padding: 0 0.6em;
+        margin: 2px;
+        // max-width: 400px;
+
+        // display: flex;
+    }
+}
+
+
