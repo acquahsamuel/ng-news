@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomepageRoutingModule } from './homepage-routing.module';
 import { HomeComponent } from './pages/home/home.component';
-import { MaterialModule } from 'src/app/material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -25,7 +24,6 @@ import { PaginatorComponent } from './components/paginator/paginator.component';
   ],
   imports: [
     CommonModule,
-    MaterialModule,
     HomepageRoutingModule
   ]
 })
