@@ -9,6 +9,9 @@ import { PageDetailsComponent } from './pages/page-details/page-details.componen
 import { ProfileComponent } from './pages/profile/profile.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { PaginatorComponent } from './components/paginator/paginator.component';
+import { LiListingsComponent } from './components/li-listings/li-listings.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { WritingComponent } from './pages/writing/writing.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { PaginatorComponent } from './components/paginator/paginator.component';
     PageDetailsComponent,
     ProfileComponent,
     CardsComponent,
-    PaginatorComponent
+    PaginatorComponent,
+    LiListingsComponent,
+    FooterComponent,
+    WritingComponent
   ],
   imports: [
     CommonModule,
