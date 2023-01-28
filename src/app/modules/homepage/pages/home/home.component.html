@@ -4,18 +4,24 @@
     <header class="main-heading">
       <div class="main-head">
         <p class="h-name">Hello, My name is Sam</p>
-        <h3>I make blazing fast and beautiful websites</h3>
-      
-        <h2 class="">
-            I’m a front-end engineer at Stanbic Ghana. I also write about the web
-            on my blog and elsewhere
+        <h3 class="h3">I make blazing fast and beautiful websites</h3>
+        <h2 class="h2">
+          I’m a front-end engineer at Stanbic Ghana. <br />
+          I also write about the web on my blog and elsewhere
         </h2>
-    </div>
-
-      
-        
-    
+      </div>
     </header>
+
+
+    <div class="section-col about">
+        <app-cards 
+         *ngFor="let item of pages"
+         [backgroundImage]="item.backgroundImage"
+         [likeTag]="item.likeTag"
+         [title]="item.title"
+         [popupImage]="item.popupImage"
+        >
+        </app-cards>
   </div>
 </div>
 

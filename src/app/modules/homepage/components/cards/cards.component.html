@@ -1,18 +1,10 @@
-<div class="cards">
-  <div *ngFor="let data of pageData" class="card">
-    <div class="card-wrapper" (click)="goTo(data)">
-      <div>
-        <figure>
-          <img
-            class="card-image"
-            src="{{ backgroundImage }}}"
-            alt="sampleimage"
-          />
-        </figure>
-      </div>
-      <h6 class="card-title">{{ title }}</h6>
-      <p class="postBody">{{ likeTag }}</p>
-      <p class="links" routerLink="">{{ popupImage }}</p>
-    </div>
+<div class="wrapper">
+  <div class="card">
+    <!-- The background image -->
+    <figure class="card__thumbnail">
+      <img src="{{ backgroundImage }}" />
+      <p class="card-tag">{{ likeTag }}</p>
+      <span class="card__title"> {{ title }}</span>
+    </figure>
   </div>
 </div>

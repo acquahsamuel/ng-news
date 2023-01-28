@@ -15,12 +15,11 @@ interface IPageData{
   styleUrls: ['./cards.component.scss']
 })
 export class CardsComponent implements OnInit {
-  
   @Input() title = '';
   @Input() backgroundImage = '';
   @Input() likeTag = '';
   @Input() popupImage = '';
-  @Input() pageData = [];
+
 
   @Output() submitted = new  EventEmitter<string>();
 
