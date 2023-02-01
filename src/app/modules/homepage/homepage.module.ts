@@ -9,9 +9,9 @@ import { PageDetailsComponent } from './pages/page-details/page-details.componen
 import { ProfileComponent } from './pages/profile/profile.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { PaginatorComponent } from './components/paginator/paginator.component';
-import { LiListingsComponent } from './components/li-listings/li-listings.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { WritingComponent } from './pages/writing/writing.component';
+import { LiListingsComponent } from './components/listings/listings.component';
 
 
 @NgModule({
