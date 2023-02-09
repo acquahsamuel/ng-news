@@ -5,7 +5,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeroComponent } from './components/hero/hero.component';
-import { PageDetailsComponent } from './pages/page-details/page-details.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { PaginatorComponent } from './components/paginator/paginator.component';
@@ -20,7 +19,6 @@ import { LiListingsComponent } from './components/listings/listings.component';
     HeaderComponent,
     SidebarComponent,
     HeroComponent,
-    PageDetailsComponent,
     ProfileComponent,
     CardsComponent,
     PaginatorComponent,

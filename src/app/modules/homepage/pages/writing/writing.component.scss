@@ -3,7 +3,7 @@
 
 .wrapper {
     margin: 0 auto;
-    // height: 100vh;
+    height: 100vh;
     background-color: rgb(243, 238, 238);
     width: 50rem auto;
     font-family: "Space Mono", monospace;
@@ -20,8 +20,6 @@
     font-size: 1.6rem;
 }
 
-
-
 .main-heading {
     display: flex;
     justify-content: center;
@@ -31,7 +29,7 @@
 
     .main-head {
         width: 35rem;
-        // border: 1px solid black;
+
         text-align: left;
     }
 }
@@ -59,7 +57,7 @@
 
         .right-content {
             width: 100%;
-            // border: 1px solid black;
+         
         }
     }
 }
