@@ -8,9 +8,9 @@ module.exports = {
       fontFamily : {
         sans : ['Rubik', 'sans-serif'],
       },
-      spacing : {
-        "18" : "4.5rem",
-      }
+      // spacing : {
+      //   "18" : "4.5rem",
+      // }
     },
   },
   plugins: [
